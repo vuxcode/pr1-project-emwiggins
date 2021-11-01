@@ -1,16 +1,17 @@
 <!-- Start writing your project code in this file! -->
 <script>
-
+// Create a grid 3x3
 var grid = [
     ['X','O','X'],
     ['X','X','O'],
     ['O','O','X']
 ]
-
+// Checking to see how the grid look
 console.log(grid);
-//var grid = [["","",""],["","","",]["","",""]];
-// Console.log(grid)
-//function update(x, y, value) {
-    //grid[x][y] = value;
-    // Console.log(grid);
+
+function reassign(array, index, newValue) {
+    array[index] = newValue;
+}
+// I reassigned(updated) the first array (0)
+reassign(grid, [0], ['X','O','O']);
 </script>
