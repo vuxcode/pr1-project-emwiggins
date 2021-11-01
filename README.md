@@ -5,6 +5,9 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > You can use this section of the file to keep notes about your project as you work on it.
 
+Spent maybe 15 minutes just to make the first commit I did to work.
+
+
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 # Project Summary
