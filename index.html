@@ -1,38 +1,73 @@
+<div>
+    <button onclick="updateCell(0, 0)">?</button>
+    <button onclick="updateCell(0, 1)">?</button>
+    <button onclick="updateCell(0, 2)">?</button>
+</div>
+<div>
+    <button onclick="updateCell(1, 0)">?</button>
+    <button onclick="updateCell(1, 1)">?</button>
+    <button onclick="updateCell(1, 2)">?</button>
+</div>
+<div>
+    <button onclick="updateCell(2, 0)">?</button>
+    <button onclick="updateCell(2, 1)">?</button>
+    <button onclick="updateCell(2, 2)">?</button>
+</div>
+
 <!-- Start writing your project code in this file! -->
 
 <script>
 // Create a grid 3x3
 var grid = [
-    ['X','O','X'],
-    ['X','X','O'],
-    ['O','O','X']
+    ['','',''],
+    ['','',''],
+    ['','','']
 ]
-// Checking to see how the grid look
+// Checking to see if it works
 console.log(grid);
 
-function reassign(array, index, newValue) {
-    array[index] = newValue;
+var player = "O";
+var row = 0;
+var col = 0;
+
+function updateRow() {
+    row++;
 }
+
+function updateCol() {
+    col++;
+}
+
+function updateCell(row,col)  {
+    grid[row][col] = player;
+     //document.getElementById("cell1").innerText = player;
+     if (player == "X") {
+         // Switch to player "O"
+         player = "O";
+     }
+     else {
+         // Updating the player to "X"
+         player = "X";
+     }
+     console.log(grid);
+     updateCol();
+     updateRow();
+     console.log("row = " + row);
+     console.log("col = " + col);
+}
+
+
+//function reassign(array, index, newValue) {
+  //  array[index] = newValue;
+//}
 // Reassigned(updated) the first array (0)
-reassign(grid, [0], ['X','O','O']);
+//reassign(grid, [0], ['X','O','O']);
 // Reassigned the second array (1)
-reassign(grid, [1], ['O','X','X']);
+//reassign(grid, [1], ['O','X','X']);
 // Reassigned the third array (2)
-reassign(grid, [2], ['X','X','O']);
+//reassign(grid, [2], ['X','X','O']);
 
 // Checking to see how the grid look
-console.log(grid);
+//console.log(grid);
 
-function reassign(array, index, newValue) {
-    array[index] = newValue;
-}
-// Reassigned(updated) the first array (0)
-reassign(grid, [0], ['O','O','O']);
-// Reassigned the second array (1)
-reassign(grid, [1], ['O','X','X']);
-// Reassigned the third array (2)
-reassign(grid, [2], ['X','X','O']);
-
-// O won
-console.log(grid);
 </script>
