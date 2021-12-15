@@ -40,7 +40,7 @@ var player = "O";
 var row = 0;
 var col = 0;
 
-function updateCell(row, col, numb)  {
+function updateCell(row, col, num)  {
 
     if (grid[row][col] == '') {
         
@@ -89,7 +89,7 @@ function updateCell(row, col, numb)  {
         }
 
         if (grid[0][2] == player && grid[1][2] == player && grid[2][2] == player) {
-            
+
             gameOver();
         }
 
