@@ -48,6 +48,52 @@ function updateCell(row, col, numb)  {
 
        document.getElementById("cell" + num).innerText = player;
 
+       if (grid[0][0] == player && grid[0][1] == player && grid[0][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[1][0] == player && grid[1][1] == player && grid[1][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[2][0] == player && grid[2][1] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][0] == player && grid[1][1] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][2] == player && grid[1][1] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][2] == player && grid[1][1] == player && grid[2][0] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][0] == player && grid[1][0] == player && grid[2][0] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][1] == player && grid[1][1] == player && grid[2][1] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][2] == player && grid[1][2] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+
        if (player == "X") {
          // Switch to player "O"
          player = "O";
@@ -56,15 +102,16 @@ function updateCell(row, col, numb)  {
          // Updating the player to "X"
          player = "X";
      }
-     //console.log(grid);
-     //updateCol();
-     //updateRow();
-     //console.log("row = " + row);
-     //console.log("col = " + col);
-     //console.log("cell = " + num);
+     console.log(grid);
+     console.log("row = " + row);
+     console.log("col = " + col);
+     console.log("cell = " + num);
+    }
+  
+    function gaveOver() {
+      console.log(player + "WON!");
     }
 
 }
-
 
 </script>
