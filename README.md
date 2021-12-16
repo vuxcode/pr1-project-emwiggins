@@ -20,4 +20,4 @@ It was a challenge creating this program. It was difficult at times but still fu
 
 > Write a clear user guide for how someone should use your program.
 
-It's a tic-tac-toe game. Two people take turns trying to get three in a row. You can see in console log (crt+shift+i) who won too.
+It's a tic-tac-toe game. Two people take turns choosing a box to put their "X" or "O" in, trying to get three in a row. The first one that gets three in a row wins. Vertically, horizontally or diagonally. You can also see in console log (ctrl+shift+i) who won.
