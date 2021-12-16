@@ -13,7 +13,9 @@ REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here. 
+It was a challenge creating this program. It was difficult at times but still fun. I'm surprised over how well it turned out considering I didn't know anything about programming 4 months ago.
 
 # User Guide
 
 > Write a clear user guide for how someone should use your program.
+It's a tic-tac-toe game. Two people take turns trying to get three in a row. You can see in console log (crt+shift+i) who won too.
