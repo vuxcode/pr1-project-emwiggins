@@ -5,12 +5,19 @@ Project Instructions: https://vuxcode.netlify.app/pr1/lessons/major-project-brie
 
 > You can use this section of the file to keep notes about your project as you work on it.
 
+Spent maybe 15 minutes just to make the first commit I did to work.
+Spent around 2 hours playing around with the array, trying to update a letter.
+
 REMEMBER TO "COMMIT" YOUR CHANGES TO THIS FILE!
 
 # Project Summary
 
 > Remember that before the final submission date you should include a "PROJECT SUMMARY" in this section here. 
 
+It was a challenge creating this program. It was difficult at times but still fun. I'm surprised over how well it turned out considering I didn't know anything about programming 4 months ago.
+
 # User Guide
 
 > Write a clear user guide for how someone should use your program.
+
+It's a tic-tac-toe game. Two people take turns choosing a box to put their "X" or "O" in, trying to get three in a row. The first one that gets three in a row wins. Vertically, horizontally or diagonally. You can also see in console log (ctrl+shift+i) who won.

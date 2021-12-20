@@ -1,1 +1,117 @@
+<style>
+
+    button {
+  
+      font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  
+    }
+  
+  </style>
+
+<div>
+    <button id="cell1" onclick="updateCell(0, 0, 1)">?</button>
+    <button id="cell2" onclick="updateCell(0, 1, 2)">?</button>
+    <button id="cell3" onclick="updateCell(0, 2, 3)">?</button>
+</div>
+<div>
+    <button id="cell4" onclick="updateCell(1, 0, 4)">?</button>
+    <button id="cell5" onclick="updateCell(1, 1, 5)">?</button>
+    <button id="cell6" onclick="updateCell(1, 2, 6)">?</button>
+</div>
+<div>
+    <button id="cell7" onclick="updateCell(2, 0, 7)">?</button>
+    <button id="cell8" onclick="updateCell(2, 1, 8)">?</button>
+    <button id="cell9" onclick="updateCell(2, 2, 9)">?</button>
+</div>
+
 <!-- Start writing your project code in this file! -->
+
+<script>
+// Create a grid 3x3
+var grid = [
+    ['','',''],
+    ['','',''],
+    ['','','']
+]
+// Checking to see if it works
+console.log(grid);
+
+var player = "O";
+var row = 0;
+var col = 0;
+
+function updateCell(row, col, num)  {
+
+    if (grid[row][col] == '') {
+        
+       grid[row][col] = player;
+
+       document.getElementById("cell" + num).innerText = player;
+
+       if (grid[0][0] == player && grid[0][1] == player && grid[0][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[1][0] == player && grid[1][1] == player && grid[1][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[2][0] == player && grid[2][1] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][0] == player && grid[1][1] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][2] == player && grid[1][1] == player && grid[2][2] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][2] == player && grid[1][1] == player && grid[2][0] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][0] == player && grid[1][0] == player && grid[2][0] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][1] == player && grid[1][1] == player && grid[2][1] == player) {
+            
+            gameOver();
+        }
+
+        if (grid[0][2] == player && grid[1][2] == player && grid[2][2] == player) {
+
+            gameOver();
+        }
+
+
+       if (player == "X") {
+         // Switch to player "O"
+         player = "O";
+     }
+     else {
+         // Updating the player to "X"
+         player = "X";
+     }
+     console.log(grid);
+     console.log("row = " + row);
+     console.log("col = " + col);
+     console.log("cell = " + num);
+    }
+  
+    function gaveOver() {
+      console.log(player + "WON!");
+    }
+
+}
+
+</script>
